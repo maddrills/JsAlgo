@@ -4,8 +4,9 @@ console.log("Hello World");
 //third
 
 const nemo = ['nemo'];
+const newArray = new Array(100).fill('nemo');
 
-const name = function (array){
+const searchThis = function (array){
 
     let time0 = performance.now();
     array.forEach((ele,index,fullarray) => {
@@ -18,4 +19,5 @@ const name = function (array){
     console.log("time diff is: ",time1 - time0 );
 }
 
-name(nemo);
+searchThis(nemo);
+searchThis(newArray);
